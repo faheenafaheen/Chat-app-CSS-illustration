@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Purple-300: hsl(276, 100%, 81%);
+    --Purple-600: hsl(276, 55%, 52%);
+    --Gray-500: hsl(270, 7%, 64%);
+    --Gray-300: hsl(206, 6%, 79%);
+    --Pink-500: hsl(293, 100%, 63%);
+    --Purple-500: hsl(264, 100%, 61%);
+    --White: hsl(0, 100%, 100%);
+    --Gray-100: hsl(270, 20%, 96%);
+    --Purple-950: hsl(271, 36%, 24%);
+    --Pink-400: hsl(289, 100%, 72%);
+}
+
+body {
+    background-color: var(--Gray-100);
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    font-family: "Rubik", sans-serif;
+     /* min-height: 100vh; */
+}
+
+body::before {
+    content: "";
+    background-image: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    position: absolute;
+    width: 400px;
+    height: 650px;
+    left: -50px;
+    border-radius: 0 0 250px 250px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+body::after {
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(hsla(293, 100%, 63%, 0.1));
+    height: 650px;
+    width: 400px;
+    right: -100px;
+    bottom: 0;
+    border-radius: 250px 250px 0 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    gap: 6rem;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 320px;
+    background-color: var(--White);
+    min-height: 300px;
+    border-radius: 40px;
+    padding: .5rem;
+    position: relative;
+    min-height: 400px;
+    box-shadow: 0 0 50px rgb(190, 188, 188);
+}
+
+.container::after {
+    content: "";
+    bottom: 100px;
+    position: absolute;
+    width: 130px;
+    height: 25px;
+    border-radius: 0 0 20px 20px;
+    /* makes it curved at bottom */
+    z-index: 2;
+    background-color: var(--White);
+    top: 0;
+    left: 28%;
+
+}
+
+.profile {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, hsl(264, 100%, 61%), hsl(293, 100%, 63%));
+    /* background-size: cover; */
+    width: 100%;
+    border-radius: 30px 30px 5px 5px;
+    padding: 1.25rem 1rem 1rem 1rem;
+    gap: 1rem;
+}
+
+.img-arrow {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-arrow span {
+    color: var(--White);
+}
+
+.avatar-img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--White);
+}
+
+.profile-name {
+    color: var(--White);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.available {
+    color: var(--Gray-300);
+    font-size: 0.55rem;
+    font-weight: 700;
+}
+
+.dot {
+    color: var(--Gray-300);
+    margin-left: 30px;
+}
+
+.chat-blue {
+    background-color: var(--Gray-100);
+    padding: 1rem;
+    border-radius: 0px 0px 30px 30px;
+}
+
+.chat-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+    /* max-width:200px; */
+}
+
+.blue-text1,
+.blue-text2,
+.blue-text3 {
+    background-color: hsla(276, 55%, 52%, 0.1);
+    padding: 0.55rem;
+    border-radius: 15px 15px 15px 0;
+    max-width: 160px;
+    /* min-height: 30px; */
+}
+
+.blue-text1 p,
+.blue-text2 p,
+.blue-text3 p {
+    color: hsl(276, 55%, 52%);
+    font-size: 10px;
+    text-align: left;
+    line-height: 15px;
+}
+
+.image-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1rem;
+    margin-top: 10px;
+}
+
+.dog-img-1,
+.dog-img-2,
+.dog-img-3 {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.dog-images {
+    display: flex;
+    flex-direction: row;
+    gap: 0.45rem;
+}
+
+.white-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.white-text1,
+.white-text2 {
+    background-color: var(--White);
+    padding: 1rem;
+    border-radius: 15px 15px 0 15px;
+    max-width: 160px;
+    /* height: 50px; */
+}
+
+.white-text1 p,
+.white-text2 p {
+    color: var(--Gray-500);
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.chat-3 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.walk {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.walk-30,
+.walk-90 {
+    display: flex;
+    border-radius: 10px 10px 10px 0;
+    gap: 1rem;
+    min-width: 200px;
+    min-height: 30px;
+    align-items: center;
+    background-image: linear-gradient(to right, hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    padding: 0.55rem;
+}
+
+.walk-30 .circle,
+.walk-90 .circle {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: block;
+    border: 1px solid hsl(289, 100%, 72%);
+}
+
+.minute {
+    color: hsla(0, 100%, 100%, 0.8);
+    font-weight: 700;
+    font-size: 0.55rem;
+    flex: 1;
+}
+
+.para-dollar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.dollar {
+    color: var(--White);
+    line-height: 15px;
+    font-weight: 700;
+    font-size: 12px;
+    margin-left: 0;
+}
+
+.chat-box {
+    background-color: var(--White);
+    border-radius: 70px;
+    padding: 5px;
+    height: 40px;
+    max-width: 280px;
+    color: var(--Gray-300);
+    margin-top: 20px;
+}
+
+.chat-box p {
+    font-size: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 30px;
+    padding-left: 10px;
+}
+
+.chat-box p span {
+    background-color: var(--Purple-950);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.booking {
+    width: 400px;
+}
+
+.book-head {
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.book-head2 {
+    color: var(--Purple-950);
+    color: var(--Gray-500);
+    font-size: 0.75rem;
+    line-height: 20px;
+    margin-top: 10px;
+    font-weight: 100;
+}
+
+@media screen and (max-width:600px){
+    body{
+        min-height: 100vh;
+    }
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 1rem;
+
+    }
+    .booking{
+        text-align: center;
+        max-width: 90%;
+    }
+    .container {
+    max-width: 90%;
+  }
+  .book-head2{
+    font-size: 1rem;
+  }
+}
