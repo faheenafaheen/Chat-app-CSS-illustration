@@ -21,7 +21,7 @@ body {
     background-color: var(--Gray-100);
     position: relative;
     z-index: 0;
-    overflow: hidden;
+    overflow-x: hidden;
     font-family: "Rubik", sans-serif;
      /* min-height: 100vh; */
 }
