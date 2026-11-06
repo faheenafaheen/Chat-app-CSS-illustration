@@ -9,10 +9,6 @@ This is my solution to the [Frontend Mentor](https://www.frontendmentor.io) chal
 - **Live site:** https://faheenafaheen.github.io/Chat-app-CSS-illustration/
 - **Repository:** https://github.com/faheenafaheen/Chat-app-CSS-illustration
 
-<!-- Add a screenshot: save it as screenshot.png in this repo, then remove these comment marks.
-![Screenshot of the project](./screenshot.png)
--->
-
 ## The challenge
 
 Users should be able to:
